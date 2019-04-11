@@ -455,6 +455,30 @@ h6 {
   margin-left: auto;
   margin-right: auto;
 }
+.btn {
+  width: 230px;
+  height: 61px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+  color: #fff;
+  background-color: #80a940;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.btn:hover,
+.btn:active {
+  background-color: #a4a4a5;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
 .phone {
   position: relative;
   padding-left: 30px;
@@ -806,4 +830,156 @@ h6 {
   background-repeat: no-repeat;
   background-size: 17px 17px;
   background-position: left top 10px;
+}
+.nav {
+  padding-top: 90px;
+}
+.nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+.nav__link {
+  display: block;
+  position: relative;
+  padding-bottom: 30px;
+}
+.nav__link::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 218px;
+  height: 4px;
+  background-color: #3a3c3e;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.nav__link p {
+  margin-bottom: 0;
+  font-size: 18px;
+  font-weight: 700;
+  color: #3a3c3e;
+  text-transform: uppercase;
+  text-align: center;
+}
+.nav__link:hover .nav__img::after,
+.nav__link:active .nav__img::after {
+  opacity: 1;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.nav__link:hover::after,
+.nav__link:active::after {
+  background-color: #80a940;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.nav__img {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.nav__img img {
+  display: block;
+}
+.nav__img::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background-color: rgba(246, 246, 246, 0.5);
+}
+.nav__img::after {
+  opacity: 0;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  border: 6px solid #80a940;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADAAAAAwBAMAAAClLOS0AAAAJFBMVEUAAACAqUCAqUCAqUCAqUCAqUCAqUCAqUCAqUCAqUCAqUCAqUCFr20FAAAAC3RSTlMA1PxXVtb5VFX9+vvnolIAAABnSURBVDjLY2BAAMdEBwZsgH337i1YJRh3796IVYJp9+5NWCW4d+/ePSox0BIsQruxAEUHhurdWMEWBmnsEhsZsrFLbMOtoxu7xGYG5iBs4lMNRmNw6EngLABwFhkcoCSAFZguRUoCAJkjzPiu1jomAAAAAElFTkSuQmCC');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 48px 48px;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.block {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+.block__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.block__img {
+  width: 384px;
+}
+.block__img img {
+  display: block;
+}
+.block__info {
+  width: calc(100% - 470px);
+}
+.block__btn {
+  margin-top: 40px;
+}
+h2,
+.title {
+  margin-top: 0;
+  padding-top: 70px;
+  position: relative;
+  z-index: 5;
+  color: #3a3c3e;
+  font-size: 36px;
+  font-weight: 400;
+}
+h2 span,
+.title span {
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  bottom: 0;
+  font-family: "Verdana", "Arial", sans-serif;
+  color: #f7f9f3;
+  font-size: 144px;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: normal;
 }
