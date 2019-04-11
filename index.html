@@ -7,6 +7,7 @@
   <title>МосДомОкна</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900&amp;subset=cyrillic-ext" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/css/swiper.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -261,10 +262,44 @@
       </div>
     </section>
     
-    <section class="gallery">
-      <div class="wrapper">
-        <p class="title"><span>05</span>Галерея наших работ</p>
-        
+    <section class="tabs wrapper" id="tabs">
+      <p class="title"><span>05</span>Галерея наших работ</p>
+      <ul class="tabs__title">
+        <li class="tabs__name"><a href="#tabs-1">Остекление веранды</a></li>
+        <li class="tabs__name"><a href="#tabs-2">Балконы и лоджии</a></li>
+        <li class="tabs__name"><a href="#tabs-3">Остекление коттеджей</a></li>
+        <li class="tabs__name"><a href="#tabs-4">Остекление квартир</a></li>
+      </ul>
+      <div class="tabs__field" id="tabs-1">
+        <div class="tabs__block">
+          <div class="tabs__imgs">
+            <a data-fancybox="gallery" href="img/images/gallery-1.jpg" class="tabs__img">
+              <img src="img/images/gallery-1.jpg" alt="Галерея">
+            </a>
+          </div>
+          <div class="tabs__imgs">
+            <a data-fancybox="gallery" href="img/images/gallery-2.jpg" class="tabs__img tabs__img--small">
+              <img src="img/images/gallery-2.jpg" alt="Галерея">
+            </a>
+            <a data-fancybox="gallery" href="img/images/gallery-3.jpg" class="tabs__img tabs__img--small">
+              <img src="img/images/gallery-3.jpg" alt="Галерея">
+            </a>
+          </div>
+          <div class="tabs__imgs">
+            <a data-fancybox="gallery" href="img/images/gallery-4.jpg" class="tabs__img">
+              <img src="img/images/gallery-4.jpg" alt="Галерея">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="tabs__field" id="tabs-2">
+        Балконы и лоджии
+      </div>
+      <div class="tabs__field" id="tabs-3">
+        Остекление коттеджей
+      </div>
+      <div class="tabs__field" id="tabs-4">
+        Остекление квартир
       </div>
     </section>
     
@@ -297,8 +332,10 @@
   
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.2.2/js/swiper.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.3.1/jquery.fancybox.min.js"></script>
 
-<!-- Slider -->
+  <!-- Slider -->
   <script>
     var mySwiper = new Swiper ('.promo__slider', {
       navigation: {
@@ -307,6 +344,13 @@
       },
       preventClicks: false,
       preventClicksPropagation: false,
+    });
+  </script>
+  
+  <!-- Tabs -->
+  <script>
+    $(function() {
+      $("#tabs").tabs();
     });
   </script>
 </body>
