@@ -1,0 +1,69 @@
+.connect {
+  position: relative;
+  padding-bottom: 40px;
+  background-image: url(../img/images/bg-2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  
+  .title {
+    color: #fff;
+    text-align: center;
+  }
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(58, 60, 62, 0.9);
+  }
+}
+
+.connect__form {
+  position: relative;
+  z-index: 5;
+  margin-top: 100px;
+}
+
+.connect__line {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 45px;
+}
+
+.connect__message,
+.connect__input {
+  display: block;
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  background-color: rgba(255, 255, 255, 0.2);
+  
+  &::placeholder {
+    opacity: 1;
+  }
+}
+
+.connect__input {
+  width: 32.8%;
+  height: 80px;
+  padding: 0 30px;
+}
+
+.connect__message {
+  width: 100%;
+  padding: 30px;
+  height: 150px;
+  min-height: 150px;
+  margin-bottom: 45px;
+}
+
+.connect__btn {
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: 0.05em;
+  font-size: 18px;
+}
