@@ -1,0 +1,31 @@
+.header {
+  position: relative;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: rgb(216, 217, 218);
+  }
+}
+
+.header__top {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #3a3c3e;
+}
+
+.header__phone {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

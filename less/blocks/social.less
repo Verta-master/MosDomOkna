@@ -1,0 +1,50 @@
+.social {
+  .reset();
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social__item {
+  width: 28px;
+  height: 28px;
+  margin-left: 12px;
+  border-radius: 2px;
+  background-color: @green;
+  .transition();
+  
+  &:hover,
+  &:active {
+    background-color: #a4a4a5;
+    .transition();
+  }
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: auto 17px;
+  background-position: center;
+  
+  &--ok {
+    background-image: url(../img/icons/odnoklassniki-logo.svg);
+  }
+  
+  &--vk {
+    color: #fff;
+    font-weight: 900;
+    font-size: 20px;
+  }
+  
+  &--tw {
+    background-image: url(../img/icons/twitter-social-logotype.svg);
+  }
+  
+  &--fb {
+    background-image: url(../img/icons/facebook-logo.svg);
+  }
+}

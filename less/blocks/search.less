@@ -1,0 +1,37 @@
+.search {
+  position: relative;
+  margin-left: auto;
+  margin-right: 40px;
+  
+  &:hover {
+    .search__input {
+      height: 40px;
+      opacity: 1;
+      .transition();
+    }
+  }
+}
+
+.search__btn {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAAcCAYAAACZOmSXAAABS2lUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJlZ2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4KPHg6eG1wbWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1QIENvcmUgNS42LWMxMzggNzkuMTU5ODI0LCAyMDE2LzA5LzE0LTAxOjA5OjAxICAgICAgICAiPgogPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4KICA8cmRmOkRlc2NyaXB0aW9uIHJkZjphYm91dD0iIi8+CiA8L3JkZjpSREY+CjwveDp4bXBtZXRhPgo8P3hwYWNrZXQgZW5kPSJyIj8+IEmuOgAAArJJREFUSIm9102oVVUUwPHfqydhqdRELYhoUOAHFA0KM8TT68uCINE9qolNAkEqbWBUu1MNKqgGDaJBRFGDjhFCBaJPt1RUUJSRmlmSpH1JQqFUPPoa7P3wIJdz7/Nd3pqstTZ7r/86l7XX2nfk0TdW6pBZGMMqXIfLMBcT+BYf4R2Mx5BOdgXqJSMd8AewCfMHiHMSz+KpGNIfg8LP6rF2Jb7E0wX8BR7DjbgE83ARrsVmfIg5eAQH6qaqzhR+Mz7HUnyHO0oyEeP4Hifwk/yTPxlDWo6byrmLsatuqrumCl+CbcV+G4uxdZAgMaQdMaSr8HJZerVuqrGpwHcWvQu3469BwKclsQ6vF3db3VTnDgLfiAVy4ayaKvS0BO7EEYzKddMX/lDRD8vXaLqyoej1dVOd1wVfhvPxD14cAlgMaSuOF/fWfnD4FH8OA14kFX1NF/zCYh8aIhgOF72wC/5vyx6mTMb7r2vD0WIvGjL88qJ/6IK/X+wrcMEQ4SuLfq8Lvgc/Fv/+YVDrplon9/sJbO+Cw4MtvWCa4LPxTHGfiCH93Q/+CvYVfydGpsHfLveNYzGkx7s2jrbs6+XrsQSfyf39yKDEuqnm4K0S5xBu6Hemfb2OyQ3huDxGD+JenDMA+G58I8982BtDOtzvXK+XzHy81gp0Qh6t4/gav2M2LpW/brVTdXLQqSv2Zgxp7VThkxLkaXd1vy+Q6+W5GNJLdVPdJr/ryC32lhhSz2HVBZ+UpfJwWCY/oyav0FF8jHdjSJ+0D9RNtUIu3FF8hRUxpF/PBN4pMaSe63VTLS4JLMTPGIsh7W/vGXY/bye1Xy7cAyWBPXVTLZ8ReEngF7lt75b/A3xQN9WaGYGXBCZiSBW2lKUtdVPdMyPwVhIBzxf3hbqp7psxeElgg/xe/A1z/we177y7WzlrOQAAAABJRU5ErkJggg==');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 31px 28px;
+}
+
+.search__input {
+  display: block;
+  opacity: 0;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 200px;
+  height: 0;
+  padding: 15px;
+  border-radius: 2px;
+  border: 1px solid @green;
+  .transition();
+}
