@@ -766,6 +766,14 @@ h6 {
   bottom: 0;
   background-color: rgba(246, 246, 246, 0.9);
 }
+.promo--internal {
+  min-height: auto;
+  padding-top: 35px;
+  background-image: none;
+}
+.promo--internal::before {
+  display: none;
+}
 .promo__title {
   margin-top: 0;
   margin-bottom: 30px;
@@ -1523,6 +1531,50 @@ h3,
   color: #3a3c3e;
   font-size: 48px;
   font-weight: 900;
+}
+.features {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #f7f9f3;
+}
+.variants {
+  padding-bottom: 100px;
+}
+.variants .title {
+  letter-spacing: 0.1em;
+}
+.variants__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 100px;
+}
+.variants__block {
+  width: 45%;
+}
+.variants__gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.variants__big {
+  width: 100%;
+}
+.variants__small {
+  width: 100px;
 }
 @media (max-width: 1600px) {
   .swiper-button-prev {
